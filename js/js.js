@@ -5,5 +5,13 @@ document.getElementById('login-btn').addEventListener('click',function(event){
 
     // get phone number from input field 
     const phoneNumber = document.getElementById('phone-number').value;
-    console.log(phoneNumber)
+    const pinNumber = document.getElementById('pin-number').value;
+    // Check phone or pin
+
+    if(phoneNumber === '12345' && pinNumber === '1234'){
+        window.location.href = 'payoo_home.html'
+    }
+    else{
+        alert("You are not allowed")
+    }
 })
