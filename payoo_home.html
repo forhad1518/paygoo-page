@@ -29,7 +29,7 @@
                    </div>
                    <div class="divider"></div>
                    <!-- Add Money Form start -->
-                   <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                   <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control mt-2">
                         <label class="label">
@@ -49,6 +49,33 @@
                     </form>
                   </div>
                    <!-- Add Money Form end -->
+                  <!-- Cash out form Start -->
+                  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control mt-2">
+                        <label class="label">
+                          <span class="label-text">Account Number</span>
+                        </label>
+                        <input type="text" placeholder="018**********" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-2">
+                        <label class="label">
+                          <span class="label-text">Amount</span>
+                        </label>
+                        <input id="input-cashOut-amount" type="text" placeholder="Your Amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-2">
+                        <label class="label">
+                          <span class="label-text">Pin</span>
+                        </label>
+                        <input id="input-cashOut-pin" type="password" placeholder="Your Pin" autocomplete="off" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-4">
+                        <button id="cash-out-btn" class="btn btn-primary">Cash Out</button>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Cash out form edn -->
               </div>
             </div>
           </div>
